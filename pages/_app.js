@@ -47,6 +47,7 @@ function App({ Component, pageProps }) {
     } else {
       setAuthorized(true);
     }
+    setAuthorized(true);
   }
   return (
     <>
