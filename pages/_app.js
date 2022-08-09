@@ -63,11 +63,14 @@ function App({ Component, pageProps }) {
 
       </Head>
 
-      {authorized && (
+      {/* {authorized && (
         <>
           <Component {...pageProps} />
         </>
-      )}
+      )} */}
+      <>
+        <Component {...pageProps} />
+      </>
       {/* <script>
           let btn = document.querySelector("#btn");
           let sidebar = document.querySelector(".sidebar");
