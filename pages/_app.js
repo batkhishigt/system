@@ -36,17 +36,17 @@ function App({ Component, pageProps }) {
     }
   }, []);
   function authCheck(url) {
-    const publicPaths = ['/login'];
-    const path = url.split('?')[0];
-    if (!userService.userValue && !publicPaths.includes(path)) {
-      setAuthorized(false);
-      router.push({
-        pathname: '/login',
-        query: { returnUrl: router.asPath }
-      });
-    } else {
-      setAuthorized(true);
-    }
+    // const publicPaths = ['/login'];
+    // const path = url.split('?')[0];
+    // if (!userService.userValue && !publicPaths.includes(path)) {
+    //   setAuthorized(false);
+    //   router.push({
+    //     pathname: '/login',
+    //     query: { returnUrl: router.asPath }
+    //   });
+    // } else {
+    //   setAuthorized(true);
+    // }
     setAuthorized(true);
   }
   return (
